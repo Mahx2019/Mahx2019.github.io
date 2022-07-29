@@ -1,5 +1,9 @@
 
-
+export const storage1 = {
+    "about":["uu加个好友呗"
+    ],
+    "colors":["#4b78da", "#55E0BDBE"]
+};
 
 // 诗词打印存储结构
 export const storage2 = {

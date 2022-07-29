@@ -1,8 +1,11 @@
+// reference: https://blog.csdn.net/weixin_40618068/article/details/103945418
+
+
 // 封装的函数传入参数
-//element -----> 被操作元素
-//json -----> 目标值数据
-//fn -----> 回调函数
-function animate(element, json, fn) {
+// element -----> 被操作元素
+// json -----> 目标值数据
+// fn -----> 回调函数
+function animate(element, json, fn, delayTime) {
     //每调用一次函数就清除一次定时器，这里是为了解决多次点击之后速度更变的问题。
     clearInterval(element.timeId);
     element.timeId = setInterval(function () {
@@ -51,7 +54,7 @@ function animate(element, json, fn) {
                 fn();
             }
         }
-    }, 60); // 定时器每10毫秒运行一次，就实现了current值一直叠加直到达到目标
+    }, delayTime); // 定时器每10毫秒运行一次，就实现了current值一直叠加直到达到目标
 }
 
 // getStyle函数，即获取元素对应的属性值

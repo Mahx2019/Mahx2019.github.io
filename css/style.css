@@ -10,6 +10,9 @@ body {
     background: #562abb88;
     color: #fff;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 /* 渐变色背景 */
 #gradient-bg{
     background: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
@@ -32,13 +35,12 @@ body {
     background-size: cover;
 }
 #second-bg {
-    /* background-color: #185325; */
-    /* opacity: 67%; */
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
+    height: 130vh;
 }
 .main {
     width: 70vw;
@@ -55,6 +57,7 @@ body {
     color: hotpink;
     text-align: center;
     margin-bottom: 78%;
+    margin-top: 22%;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff;
 }
 .poem-cite {
@@ -99,7 +102,25 @@ body {
     align-items: center;
     width: 72rem;
     height: 12rem;
-    border: 1px solid #000;
+    border: 1px solid #323232;
+}
+.main-after{
+    background-color: #a6c1ee40;
+    margin-top: 5rem;
+    height: 20vh;
+    width: 70vw;
+    border: 1px solid #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+}
+.contract-me{
+    font-size: 2rem;
+    color: #000;
+    text-align: center;
+    opacity: 100%;
 }
 
 /* 适应iPhone */
@@ -133,12 +154,20 @@ body {
         right: 1%;
         width: 98%;
         height: 40rem;
-        border: 1.5px solid rgb(50, 50, 50);
+        border: 1.5px solid #323232;
     }
     .poem-cite {
         font-size: 1.5rem;
         display: flex;
         flex-direction: column;
+    }
+    .main-after{
+        margin-top: 5rem;
+        height: 20vh;
+        width: 70vw;
+    }
+    .contract-me{
+        font-size: 1.8rem;
     }
 }
 

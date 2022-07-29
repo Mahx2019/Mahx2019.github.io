@@ -5,7 +5,7 @@ import { animate } from "./animate.js";
 // 各种打字机效果
 
 // slice 切割字符串，不能打印特殊颜色
-export function typingcolor(rootID) {
+export function typingColor(rootID) {
     let citeIndex = 0;
     let wordsIndex = 0;
     let flag = true;
@@ -43,22 +43,27 @@ let createWord = function (word, id) {
 
 
 // 每一个字符单独创建span打印
-export function typingcolor2(rootID) {
+export function typingColor2(rootID) {
+    const webWidth = document.body.clientWidth;
     let citeIndex = 0;
     let wordsIndex = 0;
     let flag = true;
     let citeNums = storage2.cites.length;
     const my_rem = 160;
     let cite_box = document.getElementById(rootID);
-    cite_box.style.paddingTop = "10rem";
+    if(webWidth < 420){
+        cite_box.style.paddingTop = "10rem";
+    }
+
     setInterval(function () {
         let txt = storage2.cites[citeIndex].words[0];
         let txtLength = txt.length;
-
         if (flag) {
             if (wordsIndex < txt.length) {
                 createSingleWord(txt[wordsIndex++], rootID, wordsIndex, citeIndex);
-                animate(cite_box,{"padding-top":(my_rem/txtLength).toFixed(0)})
+                if(webWidth < 420){
+                    animate(cite_box,{"padding-top":(my_rem/txtLength).toFixed(0)},null,60)
+                }
             } else {
                 wordsIndex++;
             }
@@ -74,7 +79,9 @@ export function typingcolor2(rootID) {
             flag = false;
         } else if (wordsIndex == 0) {
             citeIndex++;
-            cite_box.style.paddingTop = "10rem";
+            if(webWidth < 420){
+                cite_box.style.paddingTop = "10rem";
+            }
             flag = true;
             if (citeIndex == citeNums) {
                 citeIndex = 0;
