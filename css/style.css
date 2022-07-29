@@ -2,11 +2,14 @@
     padding: 0;
     border: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: "LXGW WenKai", sans-serif;
 }
 
 ::selection{
-    background: #552abb;
+    background: #562abb88;
     color: #fff;
 }
 
@@ -40,8 +43,25 @@
     color: hotpink;
     text-align: center;
     margin-bottom: 1rem;
-    margin-top: 20%;
+    margin-top: 18%;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff;
+}
+
+.poem-cite {
+    display: inline-block;
+}
+
+.color-blue {
+    display: inline-block;
+    color: #4b78da;
+}
+.color-black {
+    display: inline-block;
+    color: #000;
+}
+
+#v-clock {
+    display: flex;
 }
 
 /* 适应iPhone X */
