@@ -4,7 +4,7 @@ import { customClock } from './customClock.js';
 import { typingcolor2 } from './customTyping.js';
 
 customClock();
-typingcolor2("typing-box3");
+typingcolor2("typing-box");
 
 
 // 打开网页时
