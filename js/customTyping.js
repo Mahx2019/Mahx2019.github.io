@@ -1,4 +1,5 @@
 import { storage2 } from "./resource.js";
+import { animate } from "./animate.js";
 
 
 // 各种打字机效果
@@ -47,11 +48,17 @@ export function typingcolor2(rootID) {
     let wordsIndex = 0;
     let flag = true;
     let citeNums = storage2.cites.length;
+    const my_rem = 160;
+    let cite_box = document.getElementById(rootID);
+    cite_box.style.paddingTop = "10rem";
     setInterval(function () {
         let txt = storage2.cites[citeIndex].words[0];
+        let txtLength = txt.length;
+
         if (flag) {
             if (wordsIndex < txt.length) {
                 createSingleWord(txt[wordsIndex++], rootID, wordsIndex, citeIndex);
+                animate(cite_box,{"padding-top":(my_rem/txtLength).toFixed(0)})
             } else {
                 wordsIndex++;
             }
@@ -67,12 +74,13 @@ export function typingcolor2(rootID) {
             flag = false;
         } else if (wordsIndex == 0) {
             citeIndex++;
+            cite_box.style.paddingTop = "10rem";
             flag = true;
             if (citeIndex == citeNums) {
                 citeIndex = 0;
             }
         }
-    }, 300);
+    }, 190);
 }
 
 let createSingleWord = function (word, id, wordsIndex, citeIndex) {
