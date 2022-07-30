@@ -107,7 +107,7 @@ body {
 }
 .main-after{
     background-color: #a6c1ee40;
-    margin-top: 5rem;
+    margin-top: 5vh;
     height: 20vh;
     width: 70vw;
     border: 1px solid #323232;
@@ -150,12 +150,12 @@ body {
         justify-content: center;
         align-items: flex-start;
         position: absolute;
-        top: 11rem;
+        top: 17vh;
         left: 1%;
         right: 1%;
         width: 98%;
         height: 70vh;
-        border: 1.5px solid #323232;
+        border: 2.5px solid #323232;
     }
     .poem-cite {
         font-size: 1.5rem;
@@ -163,7 +163,7 @@ body {
         flex-direction: column;
     }
     .main-after{
-        margin-top: 5rem;
+        margin-top: 5vh;
         height: 20vh;
         width: 70vw;
     }
