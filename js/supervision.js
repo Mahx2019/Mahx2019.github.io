@@ -24,7 +24,7 @@ export function supervision(){
 
     let httpRequest = new XMLHttpRequest();
     // let url = "http://localhost:12109";
-    let url = "http://121.43.98.103:12109";
+    let url = "https://tspoty.com:12109";
     httpRequest.open("POST",url,true);
     httpRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
     // httpRequest.send(st);
