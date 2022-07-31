@@ -1,7 +1,6 @@
 
 export const storage1 = {
-    "about":["uu加个好友呗"
-    ],
+    "about":["uu加个好友呗"],
     "colors":["#4b78da", "#55E0BDBE"]
 };
 

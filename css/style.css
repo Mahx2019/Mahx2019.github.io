@@ -31,8 +31,7 @@ body {
     align-items: center;
 }
 .shade-bg{
-    background-image: url("https://s1.328888.xyz/2022/07/30/FOM2U.png");
-    /* background-image: url("../res/duo.png"); */
+    background-image: url("../res/mountain.png");
     background-size: cover;
 }
 #second-bg {
@@ -106,11 +105,11 @@ body {
     border: 1px solid #323232;
 }
 .main-after{
-    background-color: #a6c1ee40;
+    background-color: #bcceec40;
     margin-top: 5vh;
     height: 20vh;
     width: 70vw;
-    border: 1px solid #323232;
+    border: 1px solid #6e96907e;
     display: flex;
     flex-direction: column;
     align-items: center;
