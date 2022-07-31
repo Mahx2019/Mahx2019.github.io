@@ -40,7 +40,7 @@ export function supervision(){
     // let url = "http://localhost:12109";
     // let url = "https://121.43.98.103:12109";
     let url = "https://tspoty.com:12109";
-    httpRequest.open("POST",url,true);
+    httpRequest.open("POST", url, true);
     httpRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
     // httpRequest.send(st);
     httpRequest.send(JSON.stringify(st));

@@ -15,5 +15,5 @@ contractMe("contract-me");
 
 // 打开网页时
 window.onload = function () {
-    supervision();
+    // supervision();
 }
