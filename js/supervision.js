@@ -2,14 +2,28 @@
 
 
 var date = new Date();
+let cip = "";
+let cname = "";
+
+try {
+    cip = returnCitySN["cip"];
+} catch (error) {
+    cip = "proxy";
+}
+
+try {
+    cname = returnCitySN["cname"];
+} catch (error) {
+    cname = "proxy";
+}
 
 
 export function supervision(){
 
     let st = {
         location:{
-            cip:returnCitySN["cip"],
-            cname:returnCitySN["cname"],
+            cip:cip,
+            cname:cname,
         },
         ua:{
             browser:navigator.userAgent.split(" ")[1].split("(")[1],
@@ -24,7 +38,8 @@ export function supervision(){
 
     let httpRequest = new XMLHttpRequest();
     // let url = "http://localhost:12109";
-    let url = "https://121.43.98.103:12109";
+    // let url = "https://121.43.98.103:12109";
+    let url = "https://tspoty.com:12109";
     httpRequest.open("POST",url,true);
     httpRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
     // httpRequest.send(st);
