@@ -45,10 +45,10 @@ let createWord = function (word, id) {
 // 每一个字符单独创建span打印
 export function typingColor2(rootID) {
     const webWidth = document.body.clientWidth;
-    let citeIndex = 0;
     let wordsIndex = 0;
     let flag = true;
     let citeNums = storage2.cites.length;
+    let citeIndex = Math.floor(Math.random() * (citeNums+1));
     const my_rem = 160;
     let cite_box = document.getElementById(rootID);
     if(webWidth < 420){
@@ -78,14 +78,11 @@ export function typingColor2(rootID) {
         if (wordsIndex >= txt.length + 6) {
             flag = false;
         } else if (wordsIndex == 0) {
-            citeIndex++;
+            citeIndex = Math.floor(Math.random() * (citeNums+1));
             if(webWidth < 420){
                 cite_box.style.paddingTop = "10rem";
             }
             flag = true;
-            if (citeIndex == citeNums) {
-                citeIndex = 0;
-            }
         }
     }, 190);
 }

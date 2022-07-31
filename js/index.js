@@ -13,8 +13,3 @@ getNowHourImage();
 
 // console.log("web宽度:",document.body.clientWidth)
 // console.log("web高度:",document.body.clientHeight)
-
-// 打开网页时
-window.onload = function () {
-    // supervision();
-}

@@ -140,7 +140,7 @@ body {
         color: hotpink;
         text-align: center;
         position: absolute;
-        top: 1%;
+        top: -2vh;
         margin-top: 0;
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff;
     }
@@ -149,7 +149,7 @@ body {
         justify-content: center;
         align-items: flex-start;
         position: absolute;
-        top: 17vh;
+        top: 16vh;
         left: 1%;
         right: 1%;
         width: 98%;
