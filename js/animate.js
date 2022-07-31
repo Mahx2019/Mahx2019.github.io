@@ -22,11 +22,11 @@ function animate(element, json, fn, delayTime) {
                 element.style.transition = "background-color 2s";
             } else if (attr == "opacity") {
                 // 如果是透明度
-                //获取当前透明度  （getStyle函数）也自己封装
-                //因为透明度的值都是小数，为了方便计算我们先乘以100
+                // 获取当前透明度（getStyle函数）也自己封装
+                // 因为透明度的值都是小数，为了方便计算我们先乘以100
                 var current = getStyle(element, attr) * 100;
                 var target = json[attr] * 100;
-                var step = (target - current) / 10; //每一次的变化步数
+                var step = (target - current) / 10; // 每一次的变化步数
                 // 如果是正值那么步数向上取整，是负值那么步数向下取整，以便能达到目标值
                 step = step > 0 ? Math.ceil(step) : Math.floor(step);
                 current += step; // 每次的步数叠加
