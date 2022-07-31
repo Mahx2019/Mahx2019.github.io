@@ -9,14 +9,7 @@ customClock();
 typingColor2("typing-box");
 contractMe("contract-me");
 
-var _h;
-(function () {
-    mt = _hmt || [];
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?56f82fb5d6e79ebcd1cd1a3e089648a1";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-})();
+
 
 // console.log("web宽度:",document.body.clientWidth)
 // console.log("web高度:",document.body.clientHeight)
