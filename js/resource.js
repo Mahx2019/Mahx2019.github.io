@@ -1,12 +1,12 @@
 
 export const storage1 = {
-    "about":["uu加个好友呗"],
-    "colors":["#4b78da", "#55E0BDBE"]
+    "about": ["uu加个好友呗"],
+    "colors": ["#4b78da", "#55E0BDBE"]
 };
 
 // 诗词打印存储结构
 export const storage2 = {
-    "cites":[
+    "cites": [
         {
             words: ["海上升明月，天涯共此时。"],
             keywords: ["明", "月", "天", "涯"],
@@ -29,10 +29,10 @@ export const storage2 = {
         },
         {
             words: ["岂有豪情似旧时，花开花落两由之。"],
-            keywords: ["豪", "情", "花", "落"],
+            keywords: ["开", "花", "落"],
         },
     ],
-    "colors":["#4b78da", "#55E0BDBE"]
+    "colors": ["#4b78da", "#55E0BDBE"]
 };
 
 
