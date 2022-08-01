@@ -5,10 +5,13 @@ export function customClock() {
         var date = new Date();
         var year = date.getFullYear();
         var month = date.getMonth() + 1;
-        if(month < 10) {
+        if (month < 10) {
             month = "0" + month;
         }
         var riqi = date.getDate();
+        if (riqi < 10) {
+            riqi = "0" + riqi;
+        }
         var hour = date.getHours();
         if (hour < 10) {
             hour = "0" + hour;

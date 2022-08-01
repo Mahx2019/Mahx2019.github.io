@@ -1,6 +1,5 @@
 
 
-
 export function getNowHourImage() {
     let bg = document.getElementsByClassName('shade-bg')[0];
     let now = new Date();

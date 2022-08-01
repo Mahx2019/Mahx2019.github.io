@@ -41,6 +41,7 @@ body {
     align-items: center;
     margin: 20px;
     height: 130vh;
+    position: relative;
 }
 .main {
     width: 70vw;
@@ -122,6 +123,23 @@ body {
     text-align: center;
     opacity: 100%;
 }
+.begin-alert{
+    color: #000;
+    background-color: #62c8cf60;
+    text-align: center;
+    justify-content: center;
+    opacity: 100%;
+    position: absolute;
+    top: -25vh;
+    height: 20vh;
+    width: 60vw;
+    border: 1px solid #000;
+}
+.begin-alert-text{
+    font-size: 1.5rem;
+    display: block;
+    margin-top: 5vh;
+}
 
 /* 适应iPhone */
 @media (max-width: 420px) {
@@ -142,6 +160,7 @@ body {
         position: absolute;
         top: -2vh;
         margin-top: 0;
+        line-height: 4vh;
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff;
     }
     #typing-box-outside {

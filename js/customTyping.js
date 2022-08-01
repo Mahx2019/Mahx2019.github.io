@@ -78,7 +78,7 @@ export function typingColor2(rootID) {
         if (wordsIndex >= txt.length + 6) {
             flag = false;
         } else if (wordsIndex == 0) {
-            citeIndex = Math.floor(Math.random() * (citeNums + 1));
+            citeIndex = Math.floor(Math.random() * citeNums);
             if (webWidth < 420) {
                 cite_box.style.paddingTop = "10rem";
             }
