@@ -48,10 +48,10 @@ export function typingColor2(rootID) {
     let wordsIndex = 0;
     let flag = true;
     let citeNums = storage2.cites.length;
-    let citeIndex = Math.floor(Math.random() * (citeNums+1));
+    let citeIndex = Math.floor(Math.random() * citeNums);
     const my_rem = 160;
     let cite_box = document.getElementById(rootID);
-    if(webWidth < 420){
+    if (webWidth < 420) {
         cite_box.style.paddingTop = "10rem";
     }
 
@@ -61,8 +61,8 @@ export function typingColor2(rootID) {
         if (flag) {
             if (wordsIndex < txt.length) {
                 createSingleWord(txt[wordsIndex++], rootID, wordsIndex, citeIndex);
-                if(webWidth < 420){
-                    animate(cite_box,{"padding-top":(my_rem/txtLength).toFixed(0)},null,60)
+                if (webWidth < 420) {
+                    animate(cite_box, { "padding-top": (my_rem / txtLength).toFixed(0) }, null, 60)
                 }
             } else {
                 wordsIndex++;
@@ -78,8 +78,8 @@ export function typingColor2(rootID) {
         if (wordsIndex >= txt.length + 6) {
             flag = false;
         } else if (wordsIndex == 0) {
-            citeIndex = Math.floor(Math.random() * (citeNums+1));
-            if(webWidth < 420){
+            citeIndex = Math.floor(Math.random() * (citeNums + 1));
+            if (webWidth < 420) {
                 cite_box.style.paddingTop = "10rem";
             }
             flag = true;
