@@ -55,6 +55,12 @@ export function typingColor2(rootID) {
         cite_box.style.paddingTop = "10rem";
     }
 
+    // let anime1st = anime({
+    //     targets: '#typing-box',
+    //     translateY: -150,
+    //     easing: 'spring(2, 80, 90, 0)',
+    // });
+
     setInterval(function () {
         let txt = storage2.cites[citeIndex].words[0];
         let txtLength = txt.length;
@@ -63,6 +69,7 @@ export function typingColor2(rootID) {
                 createSingleWord(txt[wordsIndex++], rootID, wordsIndex, citeIndex);
                 if (webWidth < 420) {
                     animate(cite_box, { "padding-top": (my_rem / txtLength).toFixed(0) }, null, 60)
+                    // anime1st;
                 }
             } else {
                 wordsIndex++;
@@ -73,6 +80,9 @@ export function typingColor2(rootID) {
             } else {
                 removeSingleWord(rootID, wordsIndex--);
             }
+            // if (wordsIndex == 0) {
+            //     anime.remove('#typing-box');
+            // }
         }
 
         if (wordsIndex >= txt.length + 6) {
