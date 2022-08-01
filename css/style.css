@@ -99,7 +99,6 @@ body {
     flex-direction: row;
     justify-content: center;
     position: absolute;
-    top: 20rem;
     align-items: center;
     width: 72rem;
     height: 12rem;
@@ -161,6 +160,7 @@ body {
         top: -2vh;
         margin-top: 0;
         line-height: 4vh;
+        Letter-spacing: -4px;
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff;
     }
     #typing-box-outside {
@@ -168,7 +168,7 @@ body {
         justify-content: center;
         align-items: flex-start;
         position: absolute;
-        top: 16vh;
+        top: 14vh;
         left: 1%;
         right: 1%;
         width: 98%;
@@ -179,6 +179,9 @@ body {
         font-size: 1.5rem;
         display: flex;
         flex-direction: column;
+    }
+    .vclock{
+        top: 86vh;
     }
     .main-after{
         margin-top: 5vh;
