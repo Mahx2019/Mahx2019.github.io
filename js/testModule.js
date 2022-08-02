@@ -1,3 +1,7 @@
+// 测试模块
+// 上线时不使用
+
+
 import { storage2 } from "./resource.js";
 
 
