@@ -1,8 +1,9 @@
+// 打字机效果模块
+
+
 import { storage2 } from "./resource.js";
 import { animate } from "./animate.js";
 
-
-// 各种打字机效果
 
 // slice 切割字符串，不能打印特殊颜色
 export function typingColor(rootID) {

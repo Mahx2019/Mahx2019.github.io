@@ -1,3 +1,5 @@
+// 简单信息存储模块
+
 
 export const storage1 = {
     "about": ["uu加个好友呗"],

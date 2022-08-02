@@ -1,3 +1,4 @@
+// 打字机动画模块，配合新插入<span>标签使用
 // reference: https://blog.csdn.net/weixin_40618068/article/details/103945418
 
 

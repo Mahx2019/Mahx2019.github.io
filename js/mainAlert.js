@@ -1,3 +1,4 @@
+// 打开时提示刷新模块
 
 
 export function mainAlert() {

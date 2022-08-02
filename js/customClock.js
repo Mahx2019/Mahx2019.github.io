@@ -1,4 +1,6 @@
-// 时间显示
+// 时间显示模块
+
+
 export function customClock() {
     let v_clock = document.getElementById("v-clock");
     function setTime(obj) {
