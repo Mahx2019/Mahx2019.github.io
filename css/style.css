@@ -40,6 +40,7 @@ body,html {
     justify-content: center;
     position: relative;
     display: block;
+    height: 20vh;
 }
 .s-section:nth-child(1){
     background-image: url("../res/mountain.png");
@@ -113,6 +114,7 @@ body,html {
     border: 1px solid #323232;
 }
 .main-after{
+    opacity: 0;
     background-color: #bcceec40;
     margin: 4vh auto;
     height: 10vh;
