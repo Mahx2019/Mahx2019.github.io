@@ -8,8 +8,13 @@ import { storage2 } from "./resource.js";
 export function testModule() {
     console.log("web宽度:", document.body.clientWidth)
     console.log("web高度:", document.body.clientHeight)
-    console.log(storage2);
-    console.log(storage2.cites.length);
-    console.log(Math.floor(Math.random() * storage2.cites.length));
-
+    anime({
+        targets: '.line-drawing-demo .lines path',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 1500,
+        delay: function (el, i) { return i * 250 },
+        direction: 'alternate',
+        loop: true
+    });
 }

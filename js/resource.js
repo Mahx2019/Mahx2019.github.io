@@ -33,6 +33,14 @@ export const storage2 = {
             words: ["岂有豪情似旧时，花开花落两由之。"],
             keywords: ["开", "花", "落"],
         },
+        {
+            words: ["一日虚声满天下，十年从事得途穷。"],
+            keywords: ["十", "年"],
+        },
+        {
+            words: ["愿君神驰多采撷，此生难为劳燕分。"],
+            keywords: ["神", "驰"],
+        },
     ],
     "colors": ["#4b78da", "#55E0BDBE"]
 };
