@@ -2,7 +2,7 @@
 
 
 export const storage1 = {
-    "about": ["uu加个好友呗"],
+    "about": ["Powered by Tspoty"],
     "colors": ["#4b78da", "#55E0BDBE"]
 };
 
